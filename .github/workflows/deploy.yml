@@ -57,4 +57,5 @@ jobs:
           script: |
             cd ~/apps/GitHub_Packages_test/
             git pull origin main
-            docker-compose up -d
+            docker build -t my_web_server .
+            docker run -p 8080:80 my_web_server
