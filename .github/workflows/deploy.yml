@@ -54,7 +54,6 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
           port: ${{ secrets.PORT }}
-          passphrase: ${{ secrets.SSH_PASSPHRASE }}
           script: |
             cd ~/apps/GitHub_Packages_test/
             docker-compose up -d
