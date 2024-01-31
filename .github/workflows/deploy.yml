@@ -56,4 +56,5 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             cd ~/apps/GitHub_Packages_test/
+            git pull origin main
             docker-compose up -d
