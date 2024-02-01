@@ -55,7 +55,7 @@ jobs:
           key: ${{ secrets.KEY }}
           port: ${{ secrets.PORT }}
           script: |
-            cd ~/apps/GitHub_Packages_test/
+            cd ${{ secrets.FOLDER }}/GitHub_Packages_test/
             git pull origin main
             docker build -t my_web_server .
             docker run -p 8080:80 my_web_server
